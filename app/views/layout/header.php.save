@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pantube</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/pantube/public/assets/css/style.css">
+</head>
+<body class="theme-dark">
+
+<header class="header">
+
+    <form class="search-bar" method="GET" action="">
+        <input type="hidden" name="action" value="search">
+        <input type="text" name="q" placeholder="Search">
+    </form>
+
+    <div class="header-right">
+        <?php if (Auth::check()): ?>
+            <img
+                src="/pantube/public/uploads/avatars/<?= Auth::user()['avatar'] ?? 'default.png' ?>"
+                class="avatar"
+                alt="User"
+            >
+        <?php else: ?>
+            <a href="?action=login">Login</a>
+        <?php endif; ?>
+
+        <button id="themeToggle">🌙</button>
+    </div>
+</header>
+
+<div class="layout">
+
+<?php require __DIR__ . '/sidebar.php'; ?>
+
+<main class="content">

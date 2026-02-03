@@ -1,0 +1,91 @@
+[03-Feb-2026 19:06:27 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Class 'App\Models\Video' not found in Command line code:1
+Stack trace:
+#0 {main}
+  thrown in Command line code on line 1
+[03-Feb-2026 19:28:53 Europe/Helsinki] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting end of file in /var/www/html/pantube/app/controllers/VideoController.php on line 119
+[03-Feb-2026 19:29:01 Europe/Helsinki] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting end of file in /var/www/html/pantube/app/controllers/VideoController.php on line 119
+[03-Feb-2026 19:29:02 Europe/Helsinki] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting end of file in /var/www/html/pantube/app/controllers/VideoController.php on line 119
+[03-Feb-2026 19:33:14 Europe/Helsinki] [VIDEO::DELETE] Successfully deleted video ID: 1, file: video_697ba3371d534.mp4
+[03-Feb-2026 19:34:49 Europe/Helsinki] PHP Warning:  move_uploaded_file(/var/www/html/pantube/public/uploads/videos/video_698231b923ee1.mp4): failed to open stream: Permission denied in /var/www/html/pantube/app/controllers/VideoController.php on line 189
+[03-Feb-2026 19:34:49 Europe/Helsinki] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/php9pVsWA' to '/var/www/html/pantube/public/uploads/videos/video_698231b923ee1.mp4' in /var/www/html/pantube/app/controllers/VideoController.php on line 189
+[03-Feb-2026 19:35:07 Europe/Helsinki] PHP Warning:  move_uploaded_file(/var/www/html/pantube/public/uploads/videos/video_698231cbd51b7.mp4): failed to open stream: Permission denied in /var/www/html/pantube/app/controllers/VideoController.php on line 189
+[03-Feb-2026 19:35:07 Europe/Helsinki] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/php1qH4QX' to '/var/www/html/pantube/public/uploads/videos/video_698231cbd51b7.mp4' in /var/www/html/pantube/app/controllers/VideoController.php on line 189
+[03-Feb-2026 19:35:28 Europe/Helsinki] PHP Warning:  move_uploaded_file(/var/www/html/pantube/public/uploads/videos/video_698231e0ee5f8.mp4): failed to open stream: Permission denied in /var/www/html/pantube/app/controllers/VideoController.php on line 189
+[03-Feb-2026 19:35:28 Europe/Helsinki] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpfge9FP' to '/var/www/html/pantube/public/uploads/videos/video_698231e0ee5f8.mp4' in /var/www/html/pantube/app/controllers/VideoController.php on line 189
+[03-Feb-2026 19:49:46 Europe/Helsinki] [VIDEO_DELETE_TRACE] Delete request received from 192.168.1.6
+[03-Feb-2026 19:49:46 Europe/Helsinki] [VIDEO_DELETE_TRACE] REQUEST_URI: /pantube/public/delete?id=18
+[03-Feb-2026 19:49:46 Europe/Helsinki] [VIDEO_DELETE_TRACE] $_GET: {"id":"18"}
+[03-Feb-2026 19:49:46 Europe/Helsinki] [VIDEO_DELETE_TRACE] User logged in: 2
+[03-Feb-2026 19:49:46 Europe/Helsinki] [VIDEO_DELETE_TRACE] Video owner: 2, Current user: 2, User role: admin
+[03-Feb-2026 19:49:46 Europe/Helsinki] [VIDEO_DELETE] User 2 attempting to delete video 18 (video_6982333df3fad.mp4)
+[03-Feb-2026 19:49:46 Europe/Helsinki] [VIDEO::DELETE] Successfully deleted video ID: 18, file: video_6982333df3fad.mp4
+[03-Feb-2026 19:49:46 Europe/Helsinki] [VIDEO_DELETE] SUCCESS - Video 18 deleted by user 2
+[03-Feb-2026 19:54:38 Europe/Helsinki] PHP Notice:  Undefined index: other_user_id in /var/www/html/pantube/app/views/messages.php on line 26
+[03-Feb-2026 19:54:38 Europe/Helsinki] PHP Notice:  Undefined index: last_message_time in /var/www/html/pantube/app/views/messages.php on line 40
+[03-Feb-2026 19:55:18 Europe/Helsinki] PHP Notice:  Undefined index: other_user_id in /var/www/html/pantube/app/views/messages.php on line 26
+[03-Feb-2026 19:55:18 Europe/Helsinki] PHP Notice:  Undefined index: last_message_time in /var/www/html/pantube/app/views/messages.php on line 40
+[03-Feb-2026 19:57:07 Europe/Helsinki] [VIDEO_DELETE_TRACE] Delete request received from 127.0.0.1
+[03-Feb-2026 19:57:07 Europe/Helsinki] [VIDEO_DELETE_TRACE] REQUEST_URI: /pantube/public/delete?id=17
+[03-Feb-2026 19:57:07 Europe/Helsinki] [VIDEO_DELETE_TRACE] $_GET: {"id":"17"}
+[03-Feb-2026 19:57:07 Europe/Helsinki] [VIDEO_DELETE_TRACE] User logged in: 1
+[03-Feb-2026 19:57:07 Europe/Helsinki] [VIDEO_DELETE_TRACE] Video owner: 1, Current user: 1, User role: owner
+[03-Feb-2026 19:57:07 Europe/Helsinki] [VIDEO_DELETE] User 1 attempting to delete video 17 (video_698232dc72681.mp4)
+[03-Feb-2026 19:57:07 Europe/Helsinki] [VIDEO::DELETE] Successfully deleted video ID: 17, file: video_698232dc72681.mp4
+[03-Feb-2026 19:57:07 Europe/Helsinki] [VIDEO_DELETE] SUCCESS - Video 17 deleted by user 1
+[03-Feb-2026 19:57:12 Europe/Helsinki] [VIDEO_DELETE_TRACE] Delete request received from 127.0.0.1
+[03-Feb-2026 19:57:12 Europe/Helsinki] [VIDEO_DELETE_TRACE] REQUEST_URI: /pantube/public/delete?id=16
+[03-Feb-2026 19:57:12 Europe/Helsinki] [VIDEO_DELETE_TRACE] $_GET: {"id":"16"}
+[03-Feb-2026 19:57:12 Europe/Helsinki] [VIDEO_DELETE_TRACE] User logged in: 1
+[03-Feb-2026 19:57:12 Europe/Helsinki] [VIDEO_DELETE_TRACE] Video owner: 1, Current user: 1, User role: owner
+[03-Feb-2026 19:57:12 Europe/Helsinki] [VIDEO_DELETE] User 1 attempting to delete video 16 (video_697ba3371d534_new.mp4)
+[03-Feb-2026 19:57:12 Europe/Helsinki] [VIDEO::DELETE] Successfully deleted video ID: 16, file: video_697ba3371d534_new.mp4
+[03-Feb-2026 19:57:12 Europe/Helsinki] [VIDEO_DELETE] SUCCESS - Video 16 deleted by user 1
+[03-Feb-2026 19:57:14 Europe/Helsinki] [VIDEO_DELETE_TRACE] Delete request received from 127.0.0.1
+[03-Feb-2026 19:57:14 Europe/Helsinki] [VIDEO_DELETE_TRACE] REQUEST_URI: /pantube/public/delete?id=3
+[03-Feb-2026 19:57:14 Europe/Helsinki] [VIDEO_DELETE_TRACE] $_GET: {"id":"3"}
+[03-Feb-2026 19:57:14 Europe/Helsinki] [VIDEO_DELETE_TRACE] User logged in: 1
+[03-Feb-2026 19:57:14 Europe/Helsinki] [VIDEO_DELETE_TRACE] Video owner: 1, Current user: 1, User role: owner
+[03-Feb-2026 19:57:14 Europe/Helsinki] [VIDEO_DELETE] User 1 attempting to delete video 3 (video_697c91eda41aa.mp4)
+[03-Feb-2026 19:57:14 Europe/Helsinki] [VIDEO::DELETE] Successfully deleted video ID: 3, file: video_697c91eda41aa.mp4
+[03-Feb-2026 19:57:14 Europe/Helsinki] [VIDEO_DELETE] SUCCESS - Video 3 deleted by user 1
+[03-Feb-2026 19:57:16 Europe/Helsinki] [VIDEO_DELETE_TRACE] Delete request received from 127.0.0.1
+[03-Feb-2026 19:57:16 Europe/Helsinki] [VIDEO_DELETE_TRACE] REQUEST_URI: /pantube/public/delete?id=2
+[03-Feb-2026 19:57:16 Europe/Helsinki] [VIDEO_DELETE_TRACE] $_GET: {"id":"2"}
+[03-Feb-2026 19:57:16 Europe/Helsinki] [VIDEO_DELETE_TRACE] User logged in: 1
+[03-Feb-2026 19:57:16 Europe/Helsinki] [VIDEO_DELETE_TRACE] Video owner: 1, Current user: 1, User role: owner
+[03-Feb-2026 19:57:16 Europe/Helsinki] [VIDEO_DELETE] User 1 attempting to delete video 2 (video_697babcf97410.mp4)
+[03-Feb-2026 19:57:16 Europe/Helsinki] [VIDEO::DELETE] Successfully deleted video ID: 2, file: video_697babcf97410.mp4
+[03-Feb-2026 19:57:16 Europe/Helsinki] [VIDEO_DELETE] SUCCESS - Video 2 deleted by user 1
+[03-Feb-2026 19:57:18 Europe/Helsinki] [VIDEO_DELETE_TRACE] Delete request received from 127.0.0.1
+[03-Feb-2026 19:57:18 Europe/Helsinki] [VIDEO_DELETE_TRACE] REQUEST_URI: /pantube/public/delete?id=5
+[03-Feb-2026 19:57:18 Europe/Helsinki] [VIDEO_DELETE_TRACE] $_GET: {"id":"5"}
+[03-Feb-2026 19:57:18 Europe/Helsinki] [VIDEO_DELETE_TRACE] User logged in: 1
+[03-Feb-2026 19:57:18 Europe/Helsinki] [VIDEO_DELETE_TRACE] Video owner: 1, Current user: 1, User role: owner
+[03-Feb-2026 19:57:18 Europe/Helsinki] [VIDEO_DELETE] User 1 attempting to delete video 5 (video_697e1d97b40e4.mp4)
+[03-Feb-2026 19:57:18 Europe/Helsinki] [VIDEO::DELETE] Successfully deleted video ID: 5, file: video_697e1d97b40e4.mp4
+[03-Feb-2026 19:57:18 Europe/Helsinki] [VIDEO_DELETE] SUCCESS - Video 5 deleted by user 1
+[03-Feb-2026 19:57:21 Europe/Helsinki] [VIDEO_DELETE_TRACE] Delete request received from 127.0.0.1
+[03-Feb-2026 19:57:21 Europe/Helsinki] [VIDEO_DELETE_TRACE] REQUEST_URI: /pantube/public/delete?id=4
+[03-Feb-2026 19:57:21 Europe/Helsinki] [VIDEO_DELETE_TRACE] $_GET: {"id":"4"}
+[03-Feb-2026 19:57:21 Europe/Helsinki] [VIDEO_DELETE_TRACE] User logged in: 1
+[03-Feb-2026 19:57:21 Europe/Helsinki] [VIDEO_DELETE_TRACE] Video owner: 1, Current user: 1, User role: owner
+[03-Feb-2026 19:57:21 Europe/Helsinki] [VIDEO_DELETE] User 1 attempting to delete video 4 (video_697cc915883eb.mp4)
+[03-Feb-2026 19:57:21 Europe/Helsinki] [VIDEO::DELETE] Successfully deleted video ID: 4, file: video_697cc915883eb.mp4
+[03-Feb-2026 19:57:21 Europe/Helsinki] [VIDEO_DELETE] SUCCESS - Video 4 deleted by user 1
+[2026-02-03 20:33:14] DB ERROR: SQLSTATE[HY000] [2002] No such file or directory
+[04-Feb-2026 00:18:56 Europe/Helsinki] [VIDEO_DELETE_TRACE] Delete request received from 192.168.1.6
+[04-Feb-2026 00:18:56 Europe/Helsinki] [VIDEO_DELETE_TRACE] REQUEST_URI: /pantube/public/delete?id=19
+[04-Feb-2026 00:18:56 Europe/Helsinki] [VIDEO_DELETE_TRACE] $_GET: {"id":"19"}
+[04-Feb-2026 00:18:56 Europe/Helsinki] [VIDEO_DELETE_TRACE] User logged in: 2
+[04-Feb-2026 00:18:56 Europe/Helsinki] [VIDEO_DELETE_TRACE] Video owner: 2, Current user: 2, User role: admin
+[04-Feb-2026 00:18:56 Europe/Helsinki] [VIDEO_DELETE] User 2 attempting to delete video 19 (video_698237688c5a2.mp4)
+[04-Feb-2026 00:18:56 Europe/Helsinki] [VIDEO::DELETE] Successfully deleted video ID: 19, file: video_698237688c5a2.mp4
+[04-Feb-2026 00:18:56 Europe/Helsinki] [VIDEO_DELETE] SUCCESS - Video 19 deleted by user 2
+[04-Feb-2026 00:49:38 Europe/Helsinki] [VIDEO_DELETE_TRACE] Delete request received from 127.0.0.1
+[04-Feb-2026 00:49:38 Europe/Helsinki] [VIDEO_DELETE_TRACE] REQUEST_URI: /pantube/public/delete?id=20
+[04-Feb-2026 00:49:38 Europe/Helsinki] [VIDEO_DELETE_TRACE] $_GET: {"id":"20"}
+[04-Feb-2026 00:49:38 Europe/Helsinki] [VIDEO_DELETE_TRACE] User logged in: 1
+[04-Feb-2026 00:49:38 Europe/Helsinki] [VIDEO_DELETE_TRACE] Video owner: 2, Current user: 1, User role: owner
+[04-Feb-2026 00:49:38 Europe/Helsinki] [VIDEO_DELETE] User 1 attempting to delete video 20 (video_698275aa4d602.mp4)
+[04-Feb-2026 00:49:39 Europe/Helsinki] [VIDEO::DELETE] Successfully deleted video ID: 20, file: video_698275aa4d602.mp4
+[04-Feb-2026 00:49:39 Europe/Helsinki] [VIDEO_DELETE] SUCCESS - Video 20 deleted by user 1

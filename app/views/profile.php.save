@@ -1,0 +1,16 @@
+                            <div class="video-title">
+                                <?= htmlspecialchars($v['title']) ?>
+                            </div>
+                            <div class="video-meta">
+                                <?= (int)$v['views'] ?> views
+                            </div>
+                        </div>
+                    </a>
+                <?php endforeach; ?>
+            </div>
+        <?php else: ?>
+            <div class="empty-state">No videos yet.</div>
+        <?php endif; ?>
+    </section>
+
+</div>

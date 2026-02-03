@@ -1,0 +1,68 @@
+<?php
+$user = Auth::check() ? Auth::user() : null;
+
+$avatar = 'default.png';
+if ($user && !empty($user['avatar'])) {
+    $avatarPath = __DIR__ . '/../../../public/uploads/avatars/' . $user['avatar'];
+    if (file_exists($avatarPath)) {
+        $avatar = $user['avatar'];
+    }
+}
+
+$base = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
+if ($base === '') $base = '';
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pantube</title>
+
+    <!-- ✅ IMPORTANT FOR MOBILE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <base href="<?= $base ?>/">
+    <link rel="stylesheet" href="<?= $base ?>/assets/css/style.css">
+
+    <script>
+        window.PANTUBE_BASE = "<?= $base ?>";
+    </script>
+</head>
+<body>
+
+<div class="header">
+    <div class="header-left">
+        <!-- mobile menu -->
+        <button id="menuToggle" class="menu-btn">☰</button>
+
+        <a href="<?= $base ?>/home">
+            <img src="<?= $base ?>/assets/img/logo.png" class="logo" alt="Pantube">
+        </a>
+    </div>
+
+    <div class="search-bar">
+        <form action="<?= $base ?>/search" method="GET">
+            <input type="text" name="q" placeholder="Search">
+        </form>
+    </div>
+
+    <div class="header-right">
+        <!-- GitHub -->
+        <a href="https://github.com/OOPanda00" target="_blank" class="github-link">
+            <img src="<?= $base ?>/assets/img/github.svg" alt="GitHub">
+        </a>
+
+        <!-- theme toggle -->
+        <button id="themeToggle" class="theme-btn">🌙</button>
+
+        <?php if ($user): ?>
+            <a href="<?= $base ?>/profile">
+                <img src="<?= $base ?>/uploads/avatars/<?= $avatar ?>" class="header-avatar-img">
+            </a>
+        <?php endif; ?>
+    </div>
+</div>
+
+<div class="layout">
+<?php require __DIR__ . '/sidebar.php'; ?>
+<main class="content">

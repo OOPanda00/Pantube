@@ -1,0 +1,50 @@
+<aside class="sidebar">
+
+    <nav class="sidebar-menu">
+        <a href="/pantube/" class="sidebar-item">
+            🏠 <span>Home</span>
+        </a>
+
+        <?php if (Auth::check()): ?>
+            <a href="?action=upload" class="sidebar-item">
+                ⬆️ <span>Upload</span>
+            </a>
+
+            <a href="?action=messages" class="sidebar-item">
+                💬 <span>Messages</span>
+            </a>
+
+            <a href="?action=notifications" class="sidebar-item">
+                🔔 <span>Notifications</span>
+            </a>
+
+            <a href="?action=profile" class="sidebar-item">
+                👤 <span>Profile</span>
+            </a>
+
+            <a href="?action=settings" class="sidebar-item">
+                ⚙️ <span>Settings</span>
+            </a>
+
+            <?php if (Auth::isAdmin() || Auth::isOwner()): ?>
+		    sudo nano /var/www/html/pantube/app/views/layout/sidebar.php
+
+                    🛡️ <span>Admin</span>
+                </a>
+            <?php endif; ?>
+
+            <a href="?action=logout" class="sidebar-item logout">
+                🚪 <span>Logout</span>
+            </a>
+        <?php else: ?>
+            <a href="?action=login" class="sidebar-item">
+                🔑 <span>Login</span>
+            </a>
+
+            <a href="?action=register" class="sidebar-item">
+                ✍️ <span>Register</span>
+            </a>
+        <?php endif; ?>
+    </nav>
+
+</aside>

@@ -1,0 +1,39 @@
+<?php
+/**
+ * Comment Model
+ * Handles comments table operations
+ */
+
+class Comment
+{
+    /**
+     * Create new comment
+     *
+     * @param array $data
+     * @return bool
+     */
+        ]);
+    }
+
+    /**
+     * Get comments for a video
+     *
+     * @param int $videoId
+     * @return array
+     */
+    public static function forVideo(int $videoId): array
+    {
+        $db = Database::getInstance();
+
+        $stmt = $db->prepare(
+            'SELECT c.*, u.username, u.avatar
+             FROM comments c
+             JOIN users u ON u.id = c.user_id
+             WHERE c.video_id = ?
+             ORDER BY c.created_at ASC'
+        );
+
+        $stmt->execute([$videoId]);
+        return $stmt->fetchAll();
+    }
+}
